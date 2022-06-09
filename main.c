@@ -3,7 +3,6 @@
 #define INIFINITY 999
 
 
-
 void dijkstra(int** c_matrix, int *pred, int *d,int v0,int v_num);
 int getMindDist(int** c_matrix,int *visited,int v_num,int *d,int* pred);
 void ausgabe_matrix(int** adj_matrix,int anzahl);
@@ -102,7 +101,7 @@ void dijkstra(int** c_matrix, int *pred, int *d,int v0,int v_num){
     for (int i = 0; i < count; i++)
     {
         //u=getMindDist(c_matrix,visited,v_num,d,pred);
-        u=getMintDist_advanced(visited[i],c_matrix,v_num,visited ,d);
+        //u=getMintDist_advanced(visited[i],c_matrix,v_num,visited ,d);
         visited[u]=1;//setzt kürztest stecke auf besucht
         count+=1;
     }
